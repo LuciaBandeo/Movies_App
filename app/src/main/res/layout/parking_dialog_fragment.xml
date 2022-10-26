@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dialog_fragment_text_padding"
+    android:background="@color/main_activity_purple_background">
+
+    <Button
+        android:id="@+id/button_ok_dialog_fragment"
+        style="@style/button_default_style"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/text_button_ok_dialog_fragment"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_number"
+        app:layout_constraintStart_toStartOf="@id/text_view_dialog_fragment" />
+
+    <Button
+        android:id="@+id/button_cancel_dialog_fragment"
+        style="@style/button_default_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_cancel_dialog_fragment"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_number"
+        app:layout_constraintEnd_toEndOf="@id/text_view_dialog_fragment"/>
+
+    <TextView
+        android:id="@+id/text_view_dialog_fragment"
+        style="@style/text_view_fragment_set_parking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_dialog_fragment"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_number"
+        style="@style/edit_text_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/text_view_dialog_fragment"
+        app:layout_constraintTop_toBottomOf="@id/text_view_dialog_fragment"
+        app:layout_constraintEnd_toEndOf="@id/text_view_dialog_fragment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

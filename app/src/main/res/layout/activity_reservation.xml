@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_activity_text_padding"
+    android:background="@color/reservation_activity_purple_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_view_check"
+                style="@style/text_view_default_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_activity_text_view_margin_top"
+                android:text="@string/text_view_reservation_check_in"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button_check_in"
+                style="@style/button_default_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reservation_activity_text_view_margin"
+                android:text="@string/text_button_check_in"
+                app:layout_constraintTop_toBottomOf="@id/text_view_check"
+                app:layout_constraintBottom_toTopOf="@id/text_view_check_in_from"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_view_check_out"/>
+
+            <Button
+                android:id="@+id/button_check_out"
+                style="@style/button_default_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reservation_activity_text_view_margin"
+                android:text="@string/text_button_check_out"
+                app:layout_constraintTop_toBottomOf="@id/text_view_check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/button_check_in"/>
+
+            <TextView
+                android:id="@+id/text_view_check_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_activity_text_view_margin_top"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_check_in_from"
+                app:layout_constraintStart_toEndOf="@id/text_view_check_in_from"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_check_out" />
+
+            <TextView
+                android:id="@+id/text_view_check_out"
+                style="@style/text_view_empty_check_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_check_out_to"
+                app:layout_constraintStart_toEndOf="@id/text_view_check_out_to"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_check_in_from"
+                app:layout_constraintBottom_toTopOf="@id/text_view_parking_lot" />
+
+            <TextView
+                android:id="@+id/text_view_check_in_from"
+                style="@style/text_view_italics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_check_in"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_view_check_in"
+                app:layout_constraintTop_toBottomOf="@id/button_check_in"/>
+
+            <TextView
+                android:id="@+id/text_view_check_out_to"
+                style="@style/text_view_italics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_check_out"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_view_check_out"
+                app:layout_constraintTop_toBottomOf="@id/text_view_check_in_from"
+                app:layout_constraintBottom_toBottomOf="@id/text_view_check_out" />
+
+            <TextView
+                android:id="@+id/text_view_parking_lot"
+                style="@style/text_view_default_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_activity_text_view_margin_top"
+                android:text="@string/text_view_reservation_parking_lot"
+                app:layout_constraintTop_toBottomOf="@id/text_view_check"
+                app:layout_constraintBottom_toTopOf="@id/edit_text_parking_lot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_text_parking_lot"
+                style="@style/edit_text_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/reservation_activity_parking_hint"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/text_view_parking_lot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_view_security_code"
+                style="@style/text_view_default_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_text_view_margin"
+                android:text="@string/text_view_reservation_security_code"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_parking_lot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_text_security_code"
+                style="@style/edit_text_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/reservation_activity_code_hint"
+                android:inputType="numberPassword"
+                app:layout_constraintTop_toBottomOf="@id/text_view_security_code"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/button_reservation_save"
+                style="@style/button_default_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reservation_activity_text_view_margin"
+                android:text="@string/text_button_reservation_save"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_security_code"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

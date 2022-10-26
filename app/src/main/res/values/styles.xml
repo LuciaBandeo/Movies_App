@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_default_style">
+        <item name="backgroundTint">@color/buttons_grey_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_view_default_style">
+        <item name="android:textSize">@dimen/main_activity_text_size</item>
+        <item name="android:textColor">@color/main_activity_white_text</item>
+    </style>
+
+    <style name="text_view_empty_check_out">
+        <item name="android:layout_marginTop">@dimen/main_activity_text_view_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/activity_text_view_margin</item>
+    </style>
+
+    <style name="text_view_fragment_set_parking">
+        <item name="android:textSize">@dimen/main_activity_text_size_fragment</item>
+        <item name="android:textColor">@color/main_activity_white_text</item>
+    </style>
+
+    <style name="text_view_italics" parent="@style/text_view_default_style">
+        <item name="android:layout_marginTop">@dimen/main_activity_text_view_margin_top</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="edit_text_default">
+        <item name="android:ems">@integer/edit_text_activity_reservation_ems_value</item>
+        <item name="android:maxLength">@integer/edit_text_max_digits</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

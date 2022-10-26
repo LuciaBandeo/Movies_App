@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">JavaBaseProject</string>
+    <string name="text_button_main_activity_set_parking">Set number of parking available</string>
+    <string name="text_button_main_activity_reservation">Add Reservation</string>
+    <string name="text_view_main_activity">Press the button above to set the number of parking spaces available (min of 1, max of 5 digits)</string>
+    <string name="text_view_reservation_activity">Press the button above to make a reservation</string>
+    <string name="text_button_ok_dialog_fragment">OK</string>
+    <string name="text_button_cancel_dialog_fragment">CANCEL</string>
+    <string name="text_button_check_in">CHECK-IN</string>
+    <string name="text_button_check_out">CHECK-OUT</string>
+    <string name="text_view_dialog_fragment">Set the number of parking available</string>
+    <string name="error_message">Please enter a number of parking available</string>
+    <string name="error_message_min_spaces">Please set a valid number of parking available. Minimum of 1.</string>
+    <string name="error_message_set_before_reservation">Please set the number of parking available before making a reservation</string>
+    <string name="message_validations_empty_check_in">You must select a check-in date before saving your reservation.</string>
+    <string name="message_validations_empty_check_out">You must select a check-out date before saving your reservation.</string>
+    <string name="message_validations_empty_key_code">You must enter a private keycode before saving your reservation.</string>
+    <string name="message_validations_empty_fields">You must complete all the fields.</string>
+    <string name="message_validations_empty_parking">You must enter a parking number before saving your reservation.</string>
+    <string name="message_validations_start_from_now">The check-in date must be posterior to the current time.</string>
+    <string name="message_validations_out_before_in">The check-out date must be posterior to the check-in date.</string>
+    <string name="message_validations_non_existent_parking">The selected parking is non existent. Please select another one.</string>
+    <string name="message_validations_existent_reservation">The reservation already exists. Make a different one.</string>
+    <string name="message_validations_confirm_reservation">Your reservation has been saved.</string>
+    <string name="message_reservation_successful">Reservation saved successfully.</string>
+    <string name="reservation_activity_parking_hint">Select parking</string>
+    <string name="reservation_activity_code_hint">Security code</string>
+    <string name="text_view_reservation_check_in">Click on the buttons below to insert the check-in/check-out date and time.</string>
+    <string name="text_view_reservation_parking_lot">Please enter the number of the parking lot you want to reserve.</string>
+    <string name="text_view_reservation_security_code">Please enter your personal security code. It will be required at the moment of the checkout.</string>
+    <string name="text_button_reservation_save">SAVE RESERVATION</string>
+    <string name="text_view_check_in">-From-</string>
+    <string name="text_view_check_out">-To-</string>
+    <string name= "text_exception_parse_empty_string">Invalid operation. Try again.</string>
+</resources>

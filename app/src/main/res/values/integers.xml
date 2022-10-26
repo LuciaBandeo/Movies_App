@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name= "edit_text_activity_reservation_ems_value">6</integer>
+    <integer name= "edit_text_number_main_activity_ems_value">5</integer>
+    <integer name= "edit_text_max_digits">5</integer>
+</resources>
